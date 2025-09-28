@@ -1,7 +1,7 @@
 
 // Script sorpresa en JavaScript (para abrir en un navegador con devtools o incrustar en una página)
 (function(){
-  const TARGET_DATE = '2025-12-31'; // Editá esta fecha
+  const TARGET_DATE = '2025-09-29'; // Editá esta fecha
   function daysUntil(s){
     const [y,m,d] = s.split('-').map(Number);
     const target = new Date(y, m-1, d);
