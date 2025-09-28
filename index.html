@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¡Feliz Cumple, María Luisa Bejarano! 💖</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="hearts-container"></div>
+  <main class="card">
+    <h1>🎉 ¡Feliz cumpleaños, <span class="name">María Luisa Bejarano</span>! 🎉</h1>
+    <p class="lead">
+      Hoy celebro tu vida y todo lo lindo que compartimos. Gracias por ser mi compañera, mi risa y mi paz. 💗
+    </p>
+    <button id="btn-sorpresa" class="btn-primary">Haz clic para tu sorpresa</button>
+    <p class="hint"> <code></code>  <code></code>.</p>
+  </main>
+
+  <!-- Modal Sorpresa -->
+  <div id="modal" class="modal hidden" aria-hidden="true" role="dialog" aria-label="Sorpresa para María">
+    <div class="modal-content">
+      <button id="modal-close" class="close" aria-label="Cerrar">×</button>
+      <h2>Para vos, mi amor 💞</h2>
+
+      <section class="mensaje">
+        <p>
+          En cada día a tu lado encuentro un motivo más para sonreír.
+          Sos mi hogar, mi abrazo favorito, mi mejor decisión. Te amo.
+        </p>
+        <button id="btn-musica" class="btn-secondary">Reproducir música 🎵</button>
+        <audio id="music" src="assets/musica.mp3" preload="none"></audio>
+      </section>
+
+      <section class="galeria" id="galeria">
+        <!-- Las imágenes se inyectan por JS para que sea fácil reemplazarlas -->
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
